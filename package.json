@@ -18,7 +18,7 @@
       "clone": "node ./build/build.js --config ./setup/build.jsonc && rm -rf input",
       "rename": "npx abaplint ./setup/rename.jsonc --rename",
       "abaplint":  "cp ./setup/abaplint.jsonc dist && cd dist && npx abaplint && cd ..",
-      "branch": "find . -mindepth 1 -not -path './node_modules/*' -not 'name 'node_modules' -not -name 'dist' -not -path './dist/*' -not -name '.git' -not -path './.git/*' -delete && cp -r dist/* . && rm -r dist",
+      "branch": "find . -mindepth 1 -not -name 'node_modules' -not -path './node_modules/*' -not -name 'dist' -not -path './dist/*' -not -name '.git' -not -path './.git/*' -delete && cp -r dist/* . && rm -r dist",
       "rename_frontend": "node ./build/frontend_renaming/copy_rename.js && cd build/frontend_renaming && node replace_hashes.js && cd ../.. &&  node ./build/frontend_renaming/replace_icf_service.js && rm -rf dist/src/05"
     }
   }
