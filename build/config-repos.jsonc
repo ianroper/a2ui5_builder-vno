@@ -2,7 +2,7 @@
     "repos": [
       {
         "name": "abap2UI5",
-        "url": "https://github.com/abap2UI5/abap2UI5",
+        "url": "https://github.com/abap2UI5/abap2UI5/tree/1.139.0",
         "renaming" : true,
         "branches": {
           "Cloud": "main",
