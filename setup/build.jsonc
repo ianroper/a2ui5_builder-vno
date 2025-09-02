@@ -1,11 +1,6 @@
 {
   "abap_version": "v750",
   "repositories": [
-    "abap2UI5",
-    "frontend",
-    "layout-variant-management",
-    "cloud-gui",
-    "table-content-loader",
-    "sql-console"
+    "abap2UI5"
   ]
 }
