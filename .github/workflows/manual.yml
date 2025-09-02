@@ -19,5 +19,5 @@ jobs:
         node-version: 20
     - name: Run
       run: | 
-             npm run clone 
-             npm run abaplint
+             npm i @abaplint/cli
+             npm run build
