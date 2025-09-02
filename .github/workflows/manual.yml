@@ -21,3 +21,4 @@ jobs:
       run: | 
              npm i @abaplint/cli
              npm run build
+             npm run branch
