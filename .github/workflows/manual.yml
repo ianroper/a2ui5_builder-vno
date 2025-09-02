@@ -17,11 +17,11 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 20
-    - name: Run
-      run: npm run build
     - name: Archive npm failure logs
       uses: actions/upload-artifact@v4
       if: failure()
       with:
         name: npm-logs
         path: ~/.npm/_logs
+    - name: Run
+      run: npm run build
